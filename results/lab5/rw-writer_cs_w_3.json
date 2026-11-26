@@ -1,0 +1,23 @@
+{
+  "mode": "cs",
+  "meta": {
+    "lock": "rw-writer",
+    "n": 1,
+    "n_w": 1,
+    "n_r": 0,
+    "duration_s": 3.0,
+    "warmup_s": 0.5,
+    "structure": "C5",
+    "buckets": 25,
+    "python": "3.14.0",
+    "implementation": "CPython",
+    "gil_enabled": true,
+    "switch_interval_s": 0.005,
+    "logical_cores": 8,
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+  },
+  "role": "w",
+  "ops": 1892889,
+  "t_cs_us": 0.3137132710898526
+}

@@ -1,0 +1,84 @@
+{
+  "mode": "run",
+  "meta": {
+    "lock": "global",
+    "n": 3,
+    "n_w": 2,
+    "n_r": 1,
+    "duration_s": 10.0,
+    "warmup_s": 1.0,
+    "structure": "C5",
+    "buckets": 25,
+    "python": "3.14.0",
+    "implementation": "CPython",
+    "gil_enabled": true,
+    "switch_interval_s": 0.005,
+    "logical_cores": 8,
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+  },
+  "threads": [
+    {
+      "id": 1,
+      "role": "запис",
+      "ops": 2712158
+    },
+    {
+      "id": 2,
+      "role": "читання",
+      "ops": 2509626
+    },
+    {
+      "id": 3,
+      "role": "запис",
+      "ops": 2642025
+    }
+  ],
+  "roles": {
+    "write": {
+      "threads": 2,
+      "ops": 5354183,
+      "X": 535418.3,
+      "x": 267709.15,
+      "p50_us": 0.4,
+      "p99_us": 0.6,
+      "wait_max_ms": 79.4441,
+      "w": 0.21615474,
+      "cv": 0.01309873046924246,
+      "ops_per_thread": [
+        2712158,
+        2642025
+      ],
+      "phi": 0.6808638154868716
+    },
+    "read": {
+      "threads": 1,
+      "ops": 2509626,
+      "X": 250962.6,
+      "x": 250962.6,
+      "p50_us": 0.5,
+      "p99_us": 0.7,
+      "wait_max_ms": 78.3729,
+      "w": 0.24032113,
+      "cv": 0.0,
+      "ops_per_thread": [
+        2509626
+      ],
+      "phi": 0.3191361845131284
+    },
+    "all": {
+      "threads": 3,
+      "ops": 7863809,
+      "X": 786380.9,
+      "p50_us": 0.5,
+      "p99_us": 0.6,
+      "wait_max_ms": 79.4441,
+      "w": 0.22421020333333333,
+      "cv": 0.03203628917896742
+    }
+  },
+  "invariants_ok": true,
+  "invariant_problems": [],
+  "final_count": 6311368,
+  "total_add_calls": 6311368
+}

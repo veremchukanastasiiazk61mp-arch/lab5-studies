@@ -1,0 +1,26 @@
+{
+  "mode": "x1",
+  "meta": {
+    "lock": "rw-writer",
+    "n": 3,
+    "n_w": 2,
+    "n_r": 1,
+    "duration_s": 10.0,
+    "warmup_s": 1.0,
+    "structure": "C5",
+    "buckets": 25,
+    "python": "3.14.0",
+    "implementation": "CPython",
+    "gil_enabled": true,
+    "switch_interval_s": 0.005,
+    "logical_cores": 8,
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+  },
+  "pattern": "wwr",
+  "ops_w": 2900814,
+  "ops_r": 1450407,
+  "X1": 435122.1,
+  "invariants_ok": true,
+  "invariant_problems": []
+}
